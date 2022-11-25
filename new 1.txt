@@ -1,0 +1,17 @@
+#Program to transpose a matrix in different ways
+matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]
+transposed = []
+print("matrix:")
+print(matrix)
+print("transposition using nested while:")
+""" Matrix Transposition using Nested while"""
+i = 0
+while(i < len(matrix[0])):
+	j = 0
+	lx = []
+	while(j < len(matrix)):
+		lx.append(matrix[j][i])
+		j = j + 1
+	transposed.append(lx)
+	i = i + 1
+print(transposed)
